@@ -1,0 +1,81 @@
+.list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
+  gap: 20px;
+  width: 100%;
+  min-height: 90vh;
+  padding: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  background-color: #fff;
+
+  @include sm-device {
+    grid-template-columns: 100%;
+  }
+
+  &__heading {
+    grid-column: 1/-1;
+    color: green;
+
+    @include sm-device {
+      margin-top: 80px;
+      max-width: 90%;
+      text-align: center;
+      font-size: 28px;
+    }
+
+    @include small-screen {
+      font-size: 22px;
+    }
+  }
+
+  &__subtitle {
+    grid-column: 1/-1;
+    font-size: 18px;
+
+    @include sm-device {
+      text-align: center;
+    }
+  }
+
+  &__item {
+    border: 1px solid #000;
+    padding: 10px;
+    font-size: 22px;
+    font-weight: 500;
+  }
+
+  &__close {
+    position: inherit;
+    top: 20px;
+    right: 20px;
+    font-size: 40px;
+    background-color: azure;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+
+    @include sm-device {
+      top: 10px;
+      right: 10px;
+      margin-bottom: 30px;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__title {
+    font-size: 28px;
+    font-style: italic;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+  }
+
+  &__desc {
+    font-size: 18px;
+  }
+}

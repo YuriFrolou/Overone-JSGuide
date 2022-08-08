@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
+.outer {
+  position: relative;
+}
+
+.main-heading {
+  text-align: center;
+  color: green;
+}
+
+.no-data-message {
+  font-size: 30px;
+  grid-column: 1/-1;
+
+  @include sm-device {
+    margin-top: 80px;
+  }
+}

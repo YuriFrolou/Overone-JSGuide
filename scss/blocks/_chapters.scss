@@ -1,0 +1,23 @@
+.chapters {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 400px);
+  gap: 20px;
+  width: 100%;
+  padding: 15px;
+
+  @include sm-device {
+    grid-template-columns: 100%;
+  }
+
+  &__btn {
+    border: 1px solid #000;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 22px;
+    font-weight: 500;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
