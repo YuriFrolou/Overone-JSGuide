@@ -11,6 +11,7 @@ const modalsBtn = document.querySelector(".chapters__btn_modals");
 const explicitBtn = document.querySelector(".chapters__btn_explicit");
 const arithmeticBtn = document.querySelector(".chapters__btn_arithmetic");
 const comparisonBtn = document.querySelector(".chapters__btn_comparison");
+const conditionsBtn = document.querySelector(".chapters__btn_conditions");
 const newBtn = document.querySelector(".chapters__btn_new");
 
 keywordsBtn.addEventListener("click", function (e) {
@@ -51,6 +52,10 @@ arithmeticBtn.addEventListener("click", function (e) {
 
 comparisonBtn.addEventListener("click", function (e) {
     outer.insertAdjacentHTML('afterend', renderObjectList(e, equalOperators));
+});
+
+conditionsBtn.addEventListener("click", function (e) {
+    outer.insertAdjacentHTML('afterend', renderObjectList(e, conditions));
 });
 
 newBtn.addEventListener("click", function (e) {
