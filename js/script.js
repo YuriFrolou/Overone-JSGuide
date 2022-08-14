@@ -1,32 +1,37 @@
-const color = 'yellow';
+let flower = "rose";
 
-//Конструкция if...else
-if (color === 'red') {
-    console.log('Stop!');
-} else if (color === 'yellow') {
-    console.log('Get ready!');
-} else if (color === 'green') {
-    console.log('Go!');
-} else {
-    console.log('Incorrect color');
-}
-
-// Тернарный оператор
-(color === 'red') ? console.log('Stop!') :
-    (color === 'yellow') ? console.log('Get ready!') :
-        (color === 'green') ? console.log('Go!') : console.log('Incorrect color');
-
-// Конструкция switch..case
-switch (color) {
-    case 'red':
-        console.log('Stop!');
+// switch...case
+switch (flower) {
+    case "rose":
+        console.log("Roses are red");
         break;
-    case 'yellow':
-        console.log('Get ready!');
+    case "violet":
+        console.log("Violets are blue");
         break;
-    case 'green':
-        console.log('Go!');
+    case "sunflower":
+        console.log("Sunflowers are yellow");
         break;
     default:
-        console.log('Incorrect color');
+        console.log("Please select another flower");
+}
+
+// if...else
+if (flower === "rose") {
+    console.log("Roses are red");
+} else if (flower === "violet") {
+    console.log("Violets are blue");
+} else if (flower === "sunflower") {
+    console.log("Sunflowers are yellow");
+} else {
+    console.log("Please select another flower");
+}
+
+const userNumber = +prompt("Введите число от 1 до 10 включительно");
+switch (userNumber) {
+    case 3:
+    case 8:
+        console.log('You won!');
+        break;
+    default:
+        console.log('You lose!');
 }
