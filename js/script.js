@@ -1,11 +1,12 @@
-// 9 || null // 9
-// false || 0 // 0
-// 23 || '23' // 23
-// undefined || 0 // 0
-// 'hello' || 'world' // hello
-// true || 5 // true
-// '' || null // null
-// null || undefined // undefined
-// 78 || ' ' // 78
-// 5 || null || 0 // 5
-// 13 || 'string' || true // 13
+// 16 && 5 // 5
+// null && 5 // null
+// 1 && 'hello' // hello
+// null && undefined && 1 // null
+// 1 && 23 && 'str' // str
+// true && 13 // 13
+// false && '' // false
+// 'hello' && 'world' // world
+// true && false // false
+// undefined && 12 // undefined
+// 12 && null && 12 // null
+// 67 && true && 'javascript' // javascript
